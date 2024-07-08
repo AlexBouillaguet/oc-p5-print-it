@@ -65,7 +65,7 @@ h2 {
 	font-weight: 900;
 	margin-block: 1em;
 }
-h3{
+h3 {
 	font-family: 'Roboto Slab', sans-serif;
 	font-size: 22px;
 	font-weight: 900;
@@ -87,7 +87,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
-.logo{
+.logo {
 	width: 260px;
 	margin-block: 10px;
 }
