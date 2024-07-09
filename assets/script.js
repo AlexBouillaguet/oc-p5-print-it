@@ -19,6 +19,9 @@ const slides = [
 
 const leftArrow = document.querySelector("#banner .arrow_left");
 const rightArrow = document.querySelector("#banner .arrow_right");
+const dots = document.querySelector("#banner .dots");
+
+// écoute des événements pour les flèches
 
 leftArrow.addEventListener("click", () => {
 	console.log("leftArrow");
@@ -27,4 +30,17 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
 	console.log("rightArrow");
 });
+
+// insertion des dots d'après le nombre de slides
+
+for (let i = 0; i < slides.length; i++) {
+	const dot = document.createElement("div");
+	dot.classList.add("dot");
+	dots.appendChild(dot);
+}
+
+// ajout du dot sélectionné
+
+const allDots = document.querySelectorAll(".dot");
+allDots[0].classList.add("dot_selected");
 
