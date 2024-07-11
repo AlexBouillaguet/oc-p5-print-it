@@ -27,7 +27,7 @@ let currentIndex = 0;
 
 leftArrow.addEventListener("click", () => {
 	currentIndex--;
-	if (currentIndex = -1 ) {
+	if (currentIndex === -1 ) {
 		currentIndex = slides.length - 1;
 	};
 	changeSlideAndDots(currentIndex);
@@ -36,7 +36,7 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
 	currentIndex++;
 	if (currentIndex === slides.length) {
-		currentIndex = 0
+		currentIndex = 0;
 	};
 	changeSlideAndDots(currentIndex);
 });
