@@ -46,6 +46,10 @@ rightArrow.addEventListener("click", () => {
 for (let i = 0; i < slides.length; i++) {
 	const dot = document.createElement("div");
 	dot.classList.add("dot");
+	dot.addEventListener("click", () => { // écoute des dots crées pour naviguer
+		currentIndex = i;
+		changeSlideAndDots(currentIndex);
+	});
 	dots.appendChild(dot);
 };	
 
@@ -64,6 +68,6 @@ function changeSlideAndDots (indexOfSlide) {
 			dot.classList.add("dot_selected");
 		} else {
 			dot.classList.remove("dot_selected");
-		}	
+		};	
 	});	
 };	
